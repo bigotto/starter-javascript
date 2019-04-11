@@ -1,0 +1,28 @@
+<h<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Manipulando a DOM</title>
+        </head>
+        <body>
+            <div id="app">
+                <input type="text" name="nome" />
+                <button class="botao">Adcionar</button>
+            </div>
+    
+            <script>
+                //var inputElement = document.querySelector('input[name=nome]');
+                //console.log(inputElement);
+                var inputElement = document.querySelector('input[name=nome]');
+                var btnElement = document.querySelector('button.botao');
+
+                btnElement.onclick = function()
+
+                {
+                    //var text = inputElement.value;
+                    var text = inputElement.value;
+                    alert(text);
+                }
+            </script>
+        </body>
+    </html>
+

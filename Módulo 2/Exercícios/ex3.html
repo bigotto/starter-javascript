@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício></title>
+    </head>
+    
+    <body>
+        <ul id="nameList"></ul>
+        <script> 
+            var nomes = ["Bruno", "Gustavo", "Antonio", "Bigotto"];            
+            var putNames = document.querySelector('#nameList');
+            
+            function setNames(){
+
+                //<li> $nome </li>
+                for(nome of nomes){
+                    var lista = document.createElement('li');
+                    var conteudo = document.createTextNode(nome);
+
+                    lista.appendChild(conteudo);
+                    putNames.appendChild(lista);
+                }
+            }
+
+            setTimeout(setNames, 3000); //Unica vez apos 3s
+        </script>
+    </body>
+</html>          
+

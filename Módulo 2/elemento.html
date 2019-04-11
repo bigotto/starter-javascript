@@ -1,0 +1,28 @@
+<h<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Manipulando a DOM</title>
+        </head>
+        <body>
+            <div id="app">
+                <input id="nome" />
+            </div>
+            
+            
+            <script>
+                var linkElement = document.createElement('a');
+                linkElement.setAttribute('href', 'http://192.168.0.1');
+                linkElement.setAttribute('title', 'Site do roteador');
+
+                var textElement = document.createTextNode('Acessar página do roteador');
+                linkElement.appendChild(textElement);
+
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(linkElement);
+
+                var inputElement = document.querySelector('#nome');
+                containerElement.removeChild(inputElement);
+            </script>
+        </body>
+    </html>
+
